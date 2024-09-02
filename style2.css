@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url('product-presentation-wooden-table-with-background-empty-bookshelf-library_172251-444.avif') no-repeat center center fixed; /* Background image */
+    background-size: cover; /* Ensure the image covers the entire page */
+    color: #333; /* Dark gray text color */
+}
+
+.container {
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background for the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 1200px; /* Optional: limit the width of the container */
+    margin: 0 auto; /* Center the container */
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #4a4a4a;
+    margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+    background-color: #28a745; /* Custom green color */
+    border-color: #28a745;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase; /* Makes the text uppercase */
+    letter-spacing: 1px; /* Adds spacing between letters */
+}
+
+.btn-primary:hover {
+    background-color: #218838; /* Darker green on hover */
+    border-color: #1e7e34;
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
+
+.btn-primary:active {
+    background-color: #1e7e34; /* Even darker green when the button is clicked */
+    border-color: #1c7430;
+    transform: scale(0.95); /* Slightly shrinks the button on click */
+}
+
+
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.75rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: white;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none; /* Remove underline from the link */
+    display: inline-block;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+    transform: translateY(-3px); /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    text-decoration: none; /* Keep link underline removed on hover */
+}
+
+.btn-secondary:active {
+    transform: translateY(1px); /* Slight press down effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly reduced shadow on active state */
+}

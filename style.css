@@ -1,0 +1,130 @@
+/* Navbar Styling */
+.navbar-custom {
+    background-color: #333; /* Dark background color */
+    font-family: 'Poppins', sans-serif; /* Custom font family */
+    padding: 15px 20px; /* Padding around the navbar */
+}
+
+/* Navbar Brand */
+.navbar-custom .navbar-brand {
+    color: #FFD700; /* Gold color for brand */
+    font-size: 24px; /* Larger font size for brand */
+    font-weight: bold; /* Bold text for brand */
+}
+
+/* Navbar Links */
+.navbar-custom .navbar-nav .nav-link {
+    color: #FFFFFF; /* White color for links */
+    font-size: 16px; /* Font size for links */
+    padding: 10px 15px; /* Padding for links */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Active Navbar Link */
+.navbar-custom .navbar-nav .nav-link.active {
+    color: #FFD700; /* Gold color for active link */
+}
+
+/* Navbar Link Hover Effect */
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: #FFD700; /* Gold color on hover */
+}
+
+/* Navbar Toggler Icon */
+.navbar-custom .navbar-toggler {
+    border-color: #FFFFFF; /* White border for the toggler icon */
+}
+
+.navbar-custom .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+
+/* Hero Section Styling */
+.hero-section {
+    background-image: url('OIP.jpeg'); /* Background image */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Flexbox for centering content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text */
+    color: white; /* White text color for contrast */
+    position: relative; /* To position any child elements absolutely if needed */
+}
+
+.hero-section .container {
+    z-index: 2; /* Ensures the content is above any background overlays */
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text readability */
+    z-index: 1; /* Place it behind the text */
+}
+
+/* Heading Styling */
+.hero-section h1 {
+    font-size: 3.5rem; /* Large font size for the heading */
+    font-weight: 700; /* Bold heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Subheading Styling */
+.hero-section p.lead {
+    font-size: 1.5rem; /* Larger font size for subheading */
+    margin-bottom: 30px; /* Space below the subheading */
+}
+
+/* Button Styling */
+.hero-section .btn-primary {
+    background-color: #FFD700; /* Gold button background */
+    border-color: #FFD700; /* Match border with background */
+    color: #333; /* Dark text for contrast */
+    padding: 12px 25px; /* Padding for the button */
+    font-size: 1.2rem; /* Slightly larger font size */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.hero-section .btn-primary:hover {
+    background-color: #FFC107; /* Lighter gold on hover */
+    border-color: #FFC107; /* Match border with hover background */
+}
+
+
+/* Navbar Links Styling */
+.navbar-nav .nav-link {
+    color: #FFFFFF; /* Initial color for the links */
+    font-size: 16px; /* Font size for links */
+    padding: 10px 15px; /* Padding for links */
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for color, background, and transform */
+}
+
+/* Hover Effect */
+.navbar-nav .nav-link:hover {
+    color: #FFD700; /* Gold color on hover */
+    background-color: rgba(255, 255, 255, 0.1); /* Slight background color change on hover */
+    transform: scale(1.05); /* Slightly scale up the link on hover */
+}
+
+/* Active Link Styling */
+.navbar-nav .nav-link.active {
+    color: #FFD700; /* Gold color for the active link */
+}
+
+/* Page transition effect */
+.page-transition {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.page-transition.fade-out {
+    opacity: 0;
+}
